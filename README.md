@@ -48,7 +48,7 @@ A comprehensive Django-based portal system with three dashboards (Admin, Faculty
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/HasnainMuavia1/Portal
    cd Project
    ```
 
@@ -72,12 +72,16 @@ A comprehensive Django-based portal system with three dashboards (Admin, Faculty
    
    The face recognition functionality requires additional dependencies:
    ```bash
-   pip install face_recognition opencv-python
+   git clone --depth=1 https://github.com/ageitgey/face_recognition.git
+   cd face_recognition
+   pip install setuptools
+   python setup.py install
    ```
 
 5. **Configure the database**
    ```bash
    cd portal
+   python manage.py makemigrations
    python manage.py migrate
    ```
 
@@ -170,8 +174,8 @@ python manage.py migrate
 
 ## License
 
-[Your License Information]
+MIT
 
 ## Contributors
 
-[List of Contributors]
+Hasnain Muavia
